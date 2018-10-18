@@ -14,13 +14,15 @@
             </div>
             <div class="collapse navbar-collapse" id="navbar-collapse">
                 <ul class="nav navbar-nav navbar-right">
-                    <li><a href="/">Home</a></li>
-                    <li><a href="/projects">Projects</a></li>
-                    <li><a href="/photography">Photography</a></li>
-                    <li><a href="/contact">Contact</a></li>
+                    <li <% if (pageID === 'home') { %>        class="active"<% } %>  ><a href="/">Home</a></li>
+                    <li <% if (pageID === 'projects') { %>    class="active"<% } %>  ><a href="/projects">Projects</a></li>
+                    <li <% if (pageID === 'photography') { %> class="active"<% } %>  ><a href="/photography">Photography</a></li>
+                    <li <% if (pageID === 'contact') { %>     class="active"<% } %>  ><a href="/contact">Contact</a></li>
                 </li>
                 </ul><!-- nav -->
             </div><!-- navbar-collapse -->
         </div><!-- container -->
     </nav>
 </header>
+
+<% console.log("pageID", pageID); %>
