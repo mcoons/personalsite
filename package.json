@@ -1,0 +1,17 @@
+{
+  "name": "michaelcoons",
+  "version": "1.0.0",
+  "description": "Personal Site",
+  "main": "app/app.js",
+  "scripts": {
+    "start": "nodemon -e css,ejs,js,json --watch app --ignore"
+  },
+  "author": "Michael Coons",
+  "dependencies": {
+    "ejs": "^2.6.1",
+    "express": "^4.16.3",
+    "gulp": "^3.9.1",
+    "nodemon": "^1.18.3",
+    "reload": "^1.1.7"
+  }
+}
