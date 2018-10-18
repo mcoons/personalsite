@@ -93,7 +93,7 @@ header .navbar-inverse .navbar-nav>li>a {
   background-color: rgb(85, 152, 207);
 }
 
-img {
+.home-img {
   border-radius: 10px;
 }
 
@@ -102,6 +102,15 @@ img {
   border-radius: 5px;
 }
 
+.active {
+  background-color: rgb(25, 97, 155) !important;
+}
+
+.contact-icon {
+  width: 25px;
+  margin-right: 5px;
+  background-color: white;
+}
 /**  pixgrid **/
 
 .pixgrid {

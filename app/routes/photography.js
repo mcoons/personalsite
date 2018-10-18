@@ -6,7 +6,7 @@ router.get('/photography', function(request, response){
 
     response.render('photography', {
         pageTitle: 'Photography',
-        photos: pagePhotos,
+        // photos: pagePhotos,
         pageID: 'photography'
     });
 });
