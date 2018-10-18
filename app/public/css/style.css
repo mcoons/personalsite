@@ -111,6 +111,14 @@ header .navbar-inverse .navbar-nav>li>a {
   margin-right: 5px;
   background-color: white;
 }
+
+my-email::after {
+  content: attr(data-domain);
+}
+my-email::before {
+  content: attr(data-user) "\0040";
+}
+
 /**  pixgrid **/
 
 .pixgrid {
