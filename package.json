@@ -1,10 +1,11 @@
 {
   "name": "michaelcoons",
+  "homepage": "http://mcoons.github.io",
   "version": "1.0.0",
   "description": "Personal Site",
   "main": "app/app.js",
   "scripts": {
-    "start": "nodemon -e css,ejs,js,json --watch app --ignore"
+    "start": "node app/app.js"
   },
   "author": "Michael Coons",
   "dependencies": {
