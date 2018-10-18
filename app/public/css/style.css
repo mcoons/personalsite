@@ -24,10 +24,6 @@ li {
 }
 
 
-a {
-  color: #DD4F53;
-}
-
 /**  Header Navigation **/
 
 header {
@@ -94,11 +90,16 @@ header .navbar-inverse .navbar-nav>li>a {
 
 .jumbotron {
   padding: 20px 0;
-  background-color: #FFEB8B;
+  background-color: rgb(85, 152, 207);
+}
+
+img {
+  border-radius: 10px;
 }
 
 .sm-img {
   margin-right: 10px;
+  border-radius: 5px;
 }
 
 /**  pixgrid **/
