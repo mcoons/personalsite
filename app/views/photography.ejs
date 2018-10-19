@@ -10,11 +10,34 @@
             </header><!-- projects-header -->
             <div class="panel panel-default">
               <div class="panel-body photography-display">
-                <p class="text-muted chat-text">Photographs here</p>
+                <p id="parks" class="text-muted parks-text">
+                  <% if (parks.length > 0) { %> 
+                    <% parks.forEach( park => { %>
+                      <% let images = park.images %>
+                      <% images.forEach(image => { %>
+                    <img src="<%=image.path%>" alt="" class="img-responsive">
+
+
+                    <p>Location: <%= park.name  %></p>
+                    <p>Image Name: <%= image.name %></p>
+                    <p>Date Taken: <%= image.createDate %></p>
+                    <p>Camera Model: <%= image.model %></p>
+                    <p>Lens Model: <%= image.lensModel %></p>
+                    
+                    <p>Exposure: <%= image.exposureTime %> seconds</p>
+                    <p>ISO: <%= image.ISO %></p>
+                    <p>F-stop: <%= image.fNumber %></p>
+                    <p>FocalLength: <%= image.focalLength %> mm</p>
+                    <p>ExposureCompensation: <%= image.exposureCompensation %></p>
+
+
+                    <% })})} %>
+                </p>
               </div><!-- panel-body -->
             </div><!-- panel-default -->
 
     </div><!-- container -->
     <% include partials/template/footer.ejs %>
+    
   </body>
 </html>
