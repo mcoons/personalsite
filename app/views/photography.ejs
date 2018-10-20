@@ -10,28 +10,7 @@
             </header><!-- projects-header -->
             <div>
               <div class="panel-body photography-display">
-                  <% if (parks.length > 0) { %> 
-                    <% parks.forEach( park => { %>
-                      <% let images = park.images %>
-                      <% images.forEach(image => { %>
-                        <div class="panel panel-default">
-                          <img src="<%=image.path%>" alt="" class="img-responsive">
-
-
-                          <p>Location: <%= park.name  %></p>
-                          <p>Image Name: <%= image.name %></p>
-                          <p>Date Taken: <%= image.createDate %></p>
-                          <p>Camera Model: <%= image.model %></p>
-                          <p>Lens Model: <%= image.lensModel %></p>
-                          
-                          <p>Exposure: <%= image.exposureTime %> s</p>
-                          <p>ISO: <%= image.ISO %></p>
-                          <p>F-stop: f/<%= image.fNumber %></p>
-                          <p>FocalLength: <%= image.focalLength %> mm</p>
-                          <p>ExposureCompensation: <%= image.exposureCompensation %></p>
-
-                        </div>
-                    <% })})} %>
+                <% include partials/content/photos.ejs %>
               </div><!-- panel-body -->
             </div><!-- panel-default -->
 

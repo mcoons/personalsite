@@ -123,6 +123,10 @@ my-email::before {
   content: attr(data-user) "\0040";
 }
 
+#overlayText {
+  z-index: 99;
+  color:white;
+}
 /**  pixgrid **/
 
 .pixgrid {
