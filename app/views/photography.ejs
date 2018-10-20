@@ -8,31 +8,30 @@
             <header class="photography-header">
               <h1 class="article-title">Photography</h1>
             </header><!-- projects-header -->
-            <div class="panel panel-default">
+            <div>
               <div class="panel-body photography-display">
-                <p id="parks" class="text-muted parks-text">
                   <% if (parks.length > 0) { %> 
                     <% parks.forEach( park => { %>
                       <% let images = park.images %>
                       <% images.forEach(image => { %>
-                    <img src="<%=image.path%>" alt="" class="img-responsive">
+                        <div class="panel panel-default">
+                          <img src="<%=image.path%>" alt="" class="img-responsive">
 
 
-                    <p>Location: <%= park.name  %></p>
-                    <p>Image Name: <%= image.name %></p>
-                    <p>Date Taken: <%= image.createDate %></p>
-                    <p>Camera Model: <%= image.model %></p>
-                    <p>Lens Model: <%= image.lensModel %></p>
-                    
-                    <p>Exposure: <%= image.exposureTime %> seconds</p>
-                    <p>ISO: <%= image.ISO %></p>
-                    <p>F-stop: <%= image.fNumber %></p>
-                    <p>FocalLength: <%= image.focalLength %> mm</p>
-                    <p>ExposureCompensation: <%= image.exposureCompensation %></p>
+                          <p>Location: <%= park.name  %></p>
+                          <p>Image Name: <%= image.name %></p>
+                          <p>Date Taken: <%= image.createDate %></p>
+                          <p>Camera Model: <%= image.model %></p>
+                          <p>Lens Model: <%= image.lensModel %></p>
+                          
+                          <p>Exposure: <%= image.exposureTime %> s</p>
+                          <p>ISO: <%= image.ISO %></p>
+                          <p>F-stop: f/<%= image.fNumber %></p>
+                          <p>FocalLength: <%= image.focalLength %> mm</p>
+                          <p>ExposureCompensation: <%= image.exposureCompensation %></p>
 
-
+                        </div>
                     <% })})} %>
-                </p>
               </div><!-- panel-body -->
             </div><!-- panel-default -->
 
