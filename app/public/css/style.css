@@ -24,10 +24,6 @@ li {
 }
 
 
-a {
-  color: #DD4F53;
-}
-
 /**  Header Navigation **/
 
 header {
@@ -37,7 +33,7 @@ header {
 header .jumbotron {
   height: 40vh;
   margin-bottom: 0;
-  background: url(../images/photos/denver.jpg) no-repeat 100% 5%;
+  background: no-repeat 100% 5%;
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
@@ -78,6 +74,10 @@ header .navbar-inverse .navbar-nav>li>a {
   color: white;
 } 
 
+header .navbar-inverse .navbar-nav>li>a:hover {
+  background-color: rgb(68, 124, 170) ;
+}
+
 .maincontent {
   font-family: 'Roboto', sans-serif;
   font-size: 1.8rem;
@@ -94,11 +94,33 @@ header .navbar-inverse .navbar-nav>li>a {
 
 .jumbotron {
   padding: 20px 0;
-  background-color: #FFEB8B;
+  background-color: rgb(85, 152, 207);
+}
+
+.home-img {
+  border-radius: 10px;
 }
 
 .sm-img {
   margin-right: 10px;
+  border-radius: 5px;
+}
+
+.active {
+  background-color: rgb(25, 97, 155) !important;
+}
+
+.contact-icon {
+  width: 25px;
+  margin-right: 5px;
+  background-color: white;
+}
+
+my-email::after {
+  content: attr(data-domain);
+}
+my-email::before {
+  content: attr(data-user) "\0040";
 }
 
 /**  pixgrid **/

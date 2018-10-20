@@ -4,16 +4,32 @@
   <body id="<%= pageID %>">
     <% include partials/template/header.ejs %>
     <div class="container">
+        <article class="article maincontent">
 
-            <header class="contact-header">
-              <h1 class="article-title">Contacting me</h1>
-            </header><!-- contact-header -->
-            <div class="panel panel-default">
-              <div class="panel-body projects-display">
-                <p class="text-muted chat-text">Contact info here</p>
-              </div><!-- panel-body -->
-            </div><!-- panel-default -->
-
+      <header class="contact-header">
+        <h1 class="article-title">Contacting me</h1>
+      </header><!-- contact-header -->
+      <p>Feel free to reach out if anything piques your interest.</p>
+      <div>
+        <img src="/images/contact/email.jpg" alt="email logo" class="contact-icon">
+        <a href = "mailto:mcoons67!AT!gmail!DOT!com" 
+            onclick = "this.href=this.href
+              .replace(/!AT!/,'&#64;')
+              .replace(/!DOT!/,'&#46;')">
+            <my-email data-user="mcoons67" data-domain="gmail.com"></my-email>
+        </a>
+      </div>
+      <br>
+      <div>
+        <img src="/images/contact/github.jpg" alt="github logo" class="contact-icon">
+        <a href="https://github.com/mcoons">github.com/mcoons</a>
+      </div>
+      <br>
+      <div>
+        <img src="/images/contact/linkedin.jpg" alt="linkedin logo" class="contact-icon">
+        <a href="https://www.linkedin.com/in/michael-coons/">linkedin.com/in/michael-coons</a>
+      </div>
+      </article>
     </div><!-- container -->
     <% include partials/template/footer.ejs %>
   </body>
