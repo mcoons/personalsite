@@ -3,7 +3,10 @@
 body {
   margin: 0;
   padding: 0;
+  padding-bottom: 50px;
+  font: normal 16px/1.5 "Helvetica Neue", sans-serif;
   font-size: 16px;
+  overflow-x: hidden;
 }
 
 h1, h2, h3, h4, h5, h6 {
@@ -164,13 +167,8 @@ my-email::before {
   box-sizing: border-box;
 }
 
-body {
-  font: normal 16px/1.5 "Helvetica Neue", sans-serif;
-  /* background: #456990; */
-  /* color: #fff; */
-  overflow-x: hidden;
-  padding-bottom: 50px;
-}  /* INTRO SECTION
+
+/* INTRO SECTION
 –––––––––––––––––––––––––––––––––––––––––––––––––– */
 
 .intro {
@@ -288,7 +286,8 @@ time {
 –––––––––––––––––––––––––––––––––––––––––––––––––– */
 
 .timeline ul li::after {
-  transition: background .5s ease-in-out;
+  transition: .5s ease-in-out;
+  /* transition: background .5s ease-in-out; */
 }
 
 .timeline ul li.in-view::after {
@@ -340,7 +339,8 @@ time {
     left: 45px;
   }
   .timeline ul li:nth-child(even) div::before {
-    left: -15px;
+    left: -20px;
+    /* left: -15px; */
     border-width: 8px 16px 8px 0;
     border-color: transparent rgb(85, 152, 207) transparent transparent;
   }
