@@ -13,7 +13,7 @@
               <h1>Spartan Fan Page</h1>
               <img src="/images/projects/spartans.png" alt="" class="img-responsive hidden-xs projects-img">
               <h3>Purpose</h3>
-              <p>This is a very simple server side rendered app written for the Spartan parents so they can download the football pictures I take of the players.</p>
+              <p>This is a very simple server side rendered app written for the Spartan parents so they can download pictures I take of the players.</p>
               <p>It has very low maintenance.  I just add a new image directory and it <strong>dynamically updates</strong> the menu and pages <strong>by reading the file system</strong>.</p>
               <h3>Technologies</h3>
               <p>Node, Express, EJS</p>
@@ -30,9 +30,8 @@
               <!-- <img src="/images/projects/TowerOfThree.png" alt="" class="img-responsive hidden-xs projects-img"> -->
               <h3>Purpose</h3>
               <p>Galvanize Capstone Project</p>
-              <p>We were given 10 days to come up with a project idea using an unfamiliar technology and build it.  I chose the ThreeJS library which utilizes WebGL neither of which were covered in our curriculum at Galvanize.</p>
+              <p>We were given 10 days to come up with a project idea using an unfamiliar technology and build it.</p>
               <p>It is a 3D tower game that is very <strong>object oriented</strong>.  It uses an <strong>event bus architecture</strong> for component communication.</p>
-              <p>It also has a PostgreSQL backend where scores are posted.</p>
               <p><strong><a href="https://www.youtube.com/watch?v=IRuc8Y7rJcs">Capstone Presentation</a></strong></p>
               <h3>Technologies</h3>
               <p>Frontend: HTML, CSS, Javascript, ThreeJS</p>
@@ -57,6 +56,20 @@
               <a href="https://github.com/mcoons/crav_be">GitHub Backend API</a><br>
               <a href="https://crav-5afdb.firebaseapp.com/">Published Frontend</a><br>
               <a href="https://crav.herokuapp.com/">Published Backend</a><br>
+            </div>
+          </li>
+          <li>
+            <div>
+              <time>August, 2018</time>
+              <h1>Photo Blog</h1>
+              <img src="/images/projects/photoblog.png" alt="" class="img-responsive hidden-xs projects-img">
+              <h3>Purpose</h3>
+              <p>A simple server side rendered photo blog application created with Express and EJS.  It has full <strong>CRUD</strong> capabilities.  Database is stored in a Mongo Database.</p>
+              <h3>Technologies</h3>
+              <p>Node, Express, EJS, Mongoose, Mongo</p>
+              <h3>Links</h3>
+              <a href="https://github.com/mcoons/photoblog">GitHub Link</a><br>
+              <a href="http://photoblogmc.herokuapp.com/blogs">Published Link</a><br>
             </div>
           </li>
           <li>
@@ -107,8 +120,8 @@ function isElementInViewport(el) {
   return (
     rect.top >= 0 &&
     rect.left >= 0 &&
-    rect.bottom <= (window.innerHeight+200 || document.documentElement.clientHeight+200) &&
-    rect.right <= (window.innerWidth+200 || document.documentElement.clientWidth+200)
+    rect.bottom <= (window.innerHeight+300 || document.documentElement.clientHeight+300) &&
+    rect.right <= (window.innerWidth+300 || document.documentElement.clientWidth+300)
   );
 }
 
