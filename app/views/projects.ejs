@@ -1,8 +1,8 @@
 <!DOCTYPE html>
 <html>
-  <head><% include partials/template/head.ejs %></head>
+  <head><% include partials/head.ejs %></head>
   <body id="<%= pageID %>">
-    <% include partials/template/header.ejs %>
+    <% include partials/header.ejs %>
     
     <section class="timeline">
       <h1 class="projects-title">Web Projects</h1>
@@ -27,7 +27,6 @@
               <time>September, 2018</time>                         
               <h1>Tower of Three</h1>
               <img src="/images/projects/tower2.gif" alt="" class="img-responsive hidden-xs projects-img">
-              <!-- <img src="/images/projects/TowerOfThree.png" alt="" class="img-responsive hidden-xs projects-img"> -->
               <h3>Purpose</h3>
               <p>Galvanize Capstone Project</p>
               <p>We were given 10 days to come up with a project idea using an unfamiliar technology and build it.</p>
@@ -100,9 +99,23 @@
               <a href="https://dateanalyzer.firebaseapp.com/">Published Link</a><br>
             </div>
           </li>
+          <li>
+            <div>
+              <time>June, 2018</time>
+              <h1>Sprite Creator</h1>
+              <img src="/images/projects/pixel.png" alt="" class="img-responsive hidden-xs projects-img">
+              <h3>Purpose</h3>
+              <p>An advanced pixel art application.  It has multiple brush sizes, undo options, smart background, import/export among other features.</p>
+              <h3>Technologies</h3>
+              <p>HTML, CSS, JavaScript</p>
+              <h3>Links</h3>
+              <a href="https://github.com/mcoons/spritemaker">GitHub Link</a><br>
+              <a href="https://pixelpaint-81fce.firebaseapp.com/">Published Link</a><br>
+            </div>
+          </li>
       </section>
 
-    <% include partials/template/footer.ejs %>
+    <% include partials/footer.ejs %>
 
 <script>
 
