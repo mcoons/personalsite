@@ -1,14 +1,14 @@
 <!DOCTYPE html>
 <html>
-  <head><% include partials/template/head.ejs %></head>
+  <head><% include partials/head.ejs %></head>
   <body id="<%= pageID %>">
-    <% include partials/template/header.ejs %>
-    <div class="container">
+    <% include partials/header.ejs %>
+    <div class="container contactarea">
         <article class="article maincontent">
 
       <header class="contact-header">
         <h1 class="article-title">Contacting me</h1>
-      </header><!-- contact-header -->
+      </header>
       <p>Feel free to reach out if anything piques your interest.</p>
       <div>
         <img src="/images/contact/email.jpg" alt="email logo" class="contact-icon">
@@ -30,7 +30,7 @@
         <a href="https://www.linkedin.com/in/michael-coons/">linkedin.com/in/michael-coons</a>
       </div>
       </article>
-    </div><!-- container -->
-    <% include partials/template/footer.ejs %>
+    </div>
+    <% include partials/footer.ejs %>
   </body>
 </html>

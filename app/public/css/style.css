@@ -3,24 +3,29 @@
 body {
   margin: 0;
   padding: 0;
+  padding-bottom: 50px;
+  font: normal 16px/1.5 "Roboto", "Helvetica Neue", sans-serif;
+  font-weight: 300;
+
   font-size: 16px;
+  overflow-x: hidden;
 }
 
 h1, h2, h3, h4, h5, h6 {
   font-family: 'Roboto', sans-serif;
-  font-weight: 300;
+  font-weight: 600;
   color: rgb(85, 152, 207);
 }
 
 p {
   font-family: inherit;
-  font-weight: 100;
+  font-weight: 300;
 }
 
 
 li {
   font-family: inherit;
-  font-weight: 100;
+  font-weight: 300;
 }
 
 
@@ -47,7 +52,7 @@ header .navbar {
   margin-bottom: 0;
   border-radius: 0;
   font-family: "Roboto", sans-serif;
-  font-weight: 100;
+  font-weight: 300;
 }
 
 header .navbar-default {
@@ -84,14 +89,6 @@ header .navbar-inverse .navbar-nav>li>a:hover {
   line-height: 160%;
 }
 
-.footer {
-  background: rgb(85, 152, 207);
-  color: white;
-  font-family: 'Roboto', sans-serif;
-  font-size: 1.3em;
-  font-weight: 300;  margin-top: 20px;
-}
-
 .jumbotron {
   padding: 20px 0;
   background-color: rgb(85, 152, 207);
@@ -118,6 +115,7 @@ header .navbar-inverse .navbar-nav>li>a:hover {
   background-color: rgb(25, 97, 155) !important;
 }
 
+
 .contact-icon {
   width: 25px;
   margin-right: 5px;
@@ -131,58 +129,16 @@ my-email::before {
   content: attr(data-user) "\0040";
 }
 
-#overlayText {
-  z-index: 99;
-  color:white;
-}
-/**  pixgrid **/
-
-.pixgrid {
-  cursor: pointer;
-  margin-top: 20px;
-}
-
-.pixgrid img {
-  display: block;
-  padding: 5px;
-  float: left;
-  width: 33.33%;
-  border-radius: 10px;
-}
-
-@media (min-width: 500px) and (max-width: 768px) {
-  .pixgrid img {
-    width: 20%;
-  }
-}
-
-*,
-*::before,
-*::after {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-}
-
-body {
-  font: normal 16px/1.5 "Helvetica Neue", sans-serif;
-  /* background: #456990; */
-  /* color: #fff; */
-  overflow-x: hidden;
-  padding-bottom: 50px;
-}  /* INTRO SECTION
+/* INTRO SECTION
 –––––––––––––––––––––––––––––––––––––––––––––––––– */
 
 .intro {
-  /* background: #F45B69; */
   padding: 100px 0;
 }
 
 .container {
   width: 90%;
   max-width: 1200px;
-  /* margin: 0 auto; */
-  /* text-align: center; */
 }
 
 h1 {
@@ -192,6 +148,9 @@ h1 {
 
 /* TIMELINE
 –––––––––––––––––––––––––––––––––––––––––––––––––– */
+.timeline {
+  background-image: url("../images/projects/background.jpg");
+}
 
 .projects-title{
   text-align: center;
@@ -202,6 +161,7 @@ h1 {
   border-radius: 10px;
   width: 200px;
   padding: 10px;
+  background-color: white;
 }
 
 .timeline ul {
@@ -226,7 +186,8 @@ h1 {
   content: '';
   position: absolute;
   left: 50%;
-  bottom: 0;
+  /* bottom: 100px; */
+  bottom: 200px;
   padding-bottom: 20px;
 
   transform: translateX(-50%);
@@ -249,7 +210,7 @@ h1 {
 .timeline ul li div::before {
   content: '';
   position: absolute;
-  bottom: 7px;
+  bottom: 200px;  
   width: 0;
   height: 0;
   border-style: solid;
@@ -287,7 +248,7 @@ time {
 –––––––––––––––––––––––––––––––––––––––––––––––––– */
 
 .timeline ul li::after {
-  transition: background .5s ease-in-out;
+  transition: .5s ease-in-out;
 }
 
 .timeline ul li.in-view::after {
@@ -339,7 +300,7 @@ time {
     left: 45px;
   }
   .timeline ul li:nth-child(even) div::before {
-    left: -15px;
+    left: -20px;
     border-width: 8px 16px 8px 0;
     border-color: transparent rgb(85, 152, 207) transparent transparent;
   }

@@ -1,118 +1,121 @@
 <!DOCTYPE html>
 <html>
-  <head><% include partials/template/head.ejs %></head>
+  <head><% include partials/head.ejs %></head>
   <body id="<%= pageID %>">
-    <% include partials/template/header.ejs %>
-    
+    <% include partials/header.ejs %>
     
     <section class="timeline">
       <h1 class="projects-title">Web Projects</h1>
-                <ul>
-                  <li>
-                    <div>
-                      <time>October, 2018</time>
-                      <h1>Spartan Fan Page</h1>
-                      <img src="/images/projects/spartans.png" alt="" class="img-responsive hidden-xs projects-img">
-                      <h3>Purpose</h3>
-                      <p>This is a very simple app written for the Spartan parents so they can download the football pictures I took of their kids.</p>
-                      <h3>Technologies</h3>
-                      <p>Node, Express, EJS</p>
-                      <h3>Links</h3>
-                      <a href="https://github.com/mcoons/spartans">GitHub</a><br>
-                      <a href="http://spartans.michaelcoons.tech">Published</a><br>
-                    </div>
-                  </li>
-                  <li>
-                    <div>
-                      <time>September, 2018</time>                         
-                      <h1>Tower of Three</h1>
-                      <img src="/images/projects/TowerOfThree.png" alt="" class="img-responsive hidden-xs projects-img">
-                      <h3>Purpose</h3>
-                      <p>This was written for the Spartan parents so they can download the football pictures I took of their kids.</p>
-                      <h3>Technologies</h3>
-                      <p>Node, Express, EJS</p>
-                      <h3>Links</h3>
-                      <a href="https://github.com/mcoons/spartans">GitHub</a><br>
-                      <a href="http://spartans.michaelcoons.tech">Published</a><br>
-                    </div>
-                  </li>
-                  <li>
-                    <div>
-                      <time>August</time>
-                      <h1>CRāV</h1>
-                      <img src="/images/projects/crav.png" alt="" class="img-responsive hidden-xs projects-img">
-                      <h3>Purpose</h3>
-                      <p>This was a group project to practice <strong>storyboarding</strong> and <strong>Scrum</strong>. We had four days from idea generation to final product presentation using an unfamiliar technology.</p>  </p>
-                      <h3>Technologies</h3>
-                      <p>Vue, Express, EJS</p>
-                      <h3>Links</h3>
-                      <a href="https://github.com/mcoons/crav_fe">GitHub Frontend</a><br>
-                      <a href="https://github.com/mcoons/crav_be">GitHub Backend API</a><br>
-                      <a href="https://crav-5afdb.firebaseapp.com/">Published Frontend</a><br>
-                      <a href="https://crav.herokuapp.com/">Published Backend</a><br>
-                    </div>
-                  </li>
-                  <li>
-                    <div>
-                      <time>August</time>
-                      <h1>g90 Cohort Directory</h1>
-                      <img src="/images/projects/g90.png" alt="" class="img-responsive hidden-xs projects-img">
-                      <h3>Purpose</h3>
-                      <p>This was written for the Spartan parents so they can download the football pictures I took of their kids.</p>
-                      <h3>Technologies</h3>
-                      <p>Javascript, Node, Express, EJS</p>
-                      <h3>Links</h3>
-                      <a href="https://github.com/mcoons/g90directory">GitHub</a><br>
-                      <a href="hhttps://g90-directory.herokuapp.com/">Published</a><br>
-                    </div>
-                  </li>
-                  <li>
-                    <div>
-                      <time>July, 2018</time>
-                      <h1>Date Analyzer</h1>
-                      <img src="/images/projects/dateanalyzer.png" alt="" class="img-responsive hidden-xs projects-img">
-                      <h3>Purpose</h3>
-                      <p>To build a light application that reads data, has end-to-end testing, and integrates with an API</p>
-                      <h3>Technologies</h3>
-                      <p>Javascript, React</p>
-                      <h3>Links</h3>
-                      <a href="https://github.com/mcoons/galvanize-frontend-app/tree/master/drills/version-1/datanalyzer">GitHub</a><br>
-                      <a href="https://dateanalyzer.firebaseapp.com/">Published</a><br>
-                    </div>
-                  </li>
-                  <li>
-                    <div>
-                      <time>1946</time>
-                      <h1>Spartan Fan Page</h1>
-                      <img src="/images/projects/g90.png" alt="" class="img-responsive hidden-xs projects-img">
-                      <h3>Purpose</h3>
-                      <p>This was written for the Spartan parents so they can download the football pictures I took of their kids.</p>
-                      <h3>Technologies</h3>
-                      <p>Node, Express, EJS</p>
-                      <h3>Links</h3>
-                      <a href="https://github.com/mcoons/spartans">GitHub</a><br>
-                      <a href="http://spartans.michaelcoons.tech">Published</a><br>
-                    </div>
-                  </li>
-                  <li>
-                    <div>
-                      <time>1957</time>
-                      <h1>Spartan Fan Page</h1>
-                      <h3>Purpose</h3>
-                      <p>This was written for the Spartan parents so they can download the football pictures I took of their kids.</p>
-                      <h3>Technologies</h3>
-                      <p>Node, Express, EJS</p>
-                      <h3>Links</h3>
-                      <a href="https://github.com/mcoons/spartans">GitHub</a><br>
-                      <a href="http://spartans.michaelcoons.tech">Published</a><br>
-                    </div>
-                  </li>
+        <ul>
+          <li>
+            <div>
+              <time>October, 2018</time>
+              <h1>Spartan Fan Page</h1>
+              <img src="/images/projects/spartans.png" alt="" class="img-responsive hidden-xs projects-img">
+              <h3>Purpose</h3>
+              <p>This is a very simple server side rendered app written for the Spartan parents so they can download pictures I take of the players.</p>
+              <p>It has very low maintenance.  I just add a new image directory and it <strong>dynamically updates</strong> the menu and pages <strong>by reading the file system</strong>.</p>
+              <h3>Technologies</h3>
+              <p>Node, Express, EJS</p>
+              <h3>Links</h3>
+              <a href="https://github.com/mcoons/spartans">GitHub Link</a><br>
+              <a href="http://spartans.michaelcoons.tech">Published Link</a><br>
+            </div>
+          </li>
+          <li>
+            <div>
+              <time>September, 2018</time>                         
+              <h1>Tower of Three</h1>
+              <img src="/images/projects/tower2.gif" alt="" class="img-responsive hidden-xs projects-img">
+              <h3>Purpose</h3>
+              <p>Galvanize Capstone Project</p>
+              <p>We were given 10 days to come up with a project idea using an unfamiliar technology and build it.</p>
+              <p>It is a 3D tower game that is very <strong>object oriented</strong>.  It uses an <strong>event bus architecture</strong> for component communication.</p>
+              <p><strong><a href="https://www.youtube.com/watch?v=IRuc8Y7rJcs">Capstone Presentation</a></strong></p>
+              <h3>Technologies</h3>
+              <p>Frontend: HTML, CSS, Javascript, ThreeJS</p>
+              <p>Backend: Node, Express, Knex, PostgreSQL</p>
+              <h3>Links</h3>
+              <a href="https://github.com/mcoons/tower-of-horror">GitHub Link</a><br>
+              <a href="https://towerofhorror.herokuapp.com/index.html">Published Link</a><br>
+            </div>
+          </li>
+          <li>
+            <div>
+              <time>August, 2018</time>
+              <h1>CRāV</h1>
+              <img src="/images/projects/crav.png" alt="" class="img-responsive hidden-xs projects-img">
+              <h3>Purpose</h3>
+              <p>This was a group project to practice <strong>paired programming, storyboarding</strong> and <strong>Scrum</strong>. We had four days from idea generation to final product presentation using an unfamiliar technology which was VueJS.</p>
+              <h3>Technologies</h3>
+              <p>Frontend: Vue</p>
+              <p>Backend: Node, Express, Knex and PostgreSQL</p>
+              <h3>Links</h3>
+              <a href="https://github.com/mcoons/crav_fe">GitHub Frontend</a><br>
+              <a href="https://github.com/mcoons/crav_be">GitHub Backend API</a><br>
+              <a href="https://crav-5afdb.firebaseapp.com/">Published Frontend</a><br>
+              <a href="https://crav.herokuapp.com/">Published Backend</a><br>
+            </div>
+          </li>
+          <li>
+            <div>
+              <time>August, 2018</time>
+              <h1>Photo Blog</h1>
+              <img src="/images/projects/photoblog.png" alt="" class="img-responsive hidden-xs projects-img">
+              <h3>Purpose</h3>
+              <p>A simple server side rendered photo blog application created with Express and EJS.  It has full <strong>CRUD</strong> capabilities.  Database is stored in a Mongo Database.</p>
+              <h3>Technologies</h3>
+              <p>Node, Express, EJS, Mongoose, Mongo</p>
+              <h3>Links</h3>
+              <a href="https://github.com/mcoons/photoblog">GitHub Link</a><br>
+              <a href="http://photoblogmc.herokuapp.com/blogs">Published Link</a><br>
+            </div>
+          </li>
+          <li>
+            <div>
+              <time>August, 2018</time>
+              <h1>g90 Cohort Directory</h1>
+              <img src="/images/projects/g90.png" alt="" class="img-responsive hidden-xs projects-img">
+              <h3>Purpose</h3>
+              <p>This is a directory of our cohort so we can keep in touch. It is a full stack server side <strong>CRUD</strong> app written using Node, Express and EJS.  It uses Knex with a PostgreSQL database.</p>
+              <h3>Technologies</h3>
+              <p>Node, Express, EJS, Knex, PostgreSQL</p>
+              <h3>Links</h3>
+              <a href="https://github.com/mcoons/g90directory">GitHub Link</a><br>
+              <a href="hhttps://g90-directory.herokuapp.com/">Published Link</a><br>
+            </div>
+          </li>
+          <li>
+            <div>
+              <time>July, 2018</time>
+              <h1>Date Analyzer</h1>
+              <img src="/images/projects/dateanalyzer.png" alt="" class="img-responsive hidden-xs projects-img">
+              <h3>Purpose</h3>
+              <p>To build a light application that reads data, has <strong>end-to-end testing</strong>, and integrates with an API</p>
+              <h3>Technologies</h3>
+              <p>React, Cypress</p>
+              <h3>Links</h3>
+              <a href="https://github.com/mcoons/galvanize-frontend-app/tree/master/drills/version-1/datanalyzer">GitHub Link</a><br>
+              <a href="https://dateanalyzer.firebaseapp.com/">Published Link</a><br>
+            </div>
+          </li>
+          <li>
+            <div>
+              <time>June, 2018</time>
+              <h1>Sprite Creator</h1>
+              <img src="/images/projects/pixel.png" alt="" class="img-responsive hidden-xs projects-img">
+              <h3>Purpose</h3>
+              <p>An advanced pixel art application.  It has multiple brush sizes, undo options, smart background, import/export among other features.</p>
+              <h3>Technologies</h3>
+              <p>HTML, CSS, JavaScript</p>
+              <h3>Links</h3>
+              <a href="https://github.com/mcoons/spritemaker">GitHub Link</a><br>
+              <a href="https://pixelpaint-81fce.firebaseapp.com/">Published Link</a><br>
+            </div>
+          </li>
+      </section>
 
-              </section>
-
-
-    <% include partials/template/footer.ejs %>
-
+    <% include partials/footer.ejs %>
 
 <script>
 
@@ -130,8 +133,8 @@ function isElementInViewport(el) {
   return (
     rect.top >= 0 &&
     rect.left >= 0 &&
-    rect.bottom <= (window.innerHeight || document.documentElement.clientHeight) &&
-    rect.right <= (window.innerWidth || document.documentElement.clientWidth)
+    rect.bottom <= (window.innerHeight+300 || document.documentElement.clientHeight+300) &&
+    rect.right <= (window.innerWidth+300 || document.documentElement.clientWidth+300)
   );
 }
 
